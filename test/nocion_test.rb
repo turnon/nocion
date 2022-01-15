@@ -2,8 +2,8 @@
 
 require "test_helper"
 
-class NorTest < Minitest::Test
+class NocionTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Nor::VERSION
+    refute_nil ::Nocion::VERSION
   end
 end

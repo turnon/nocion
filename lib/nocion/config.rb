@@ -1,8 +1,8 @@
-module Nor
+module Nocion
   module Config
     class << self
       def read!
-        path = File.join(ENV['HOME'], '.nor.json')
+        path = File.join(ENV['HOME'], '.nocion.json')
         @cfg = File.exists?(path) ? JSON.parse(File.read(path)) : {}
       end
 

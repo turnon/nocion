@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "nor/version"
+require_relative "nocion/version"
 require "json"
-require "nor/config"
+require "nocion/config"
 require "rest-client"
 
-module Nor
+module Nocion
   class Database
     Page = Struct.new(:id, :title, :created, :updated, :tag)
 

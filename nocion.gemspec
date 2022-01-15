@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/nor/version"
+require_relative "lib/nocion/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "nor"
-  spec.version       = Nor::VERSION
+  spec.name          = "nocion"
+  spec.version       = Nocion::VERSION
   spec.authors       = ["ken"]
   spec.email         = ["block24block@gmail.com"]
 
   spec.summary       = %q{Wrap notion api}
-  spec.homepage      = "https://github.com/turnon/nor"
+  spec.homepage      = "https://github.com/turnon/nocion"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 

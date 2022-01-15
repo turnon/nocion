@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in nor.gemspec
+# Specify your gem's dependencies in nocion.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
