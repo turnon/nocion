@@ -40,10 +40,10 @@ module Nocion
       body['results'].each do |json|
         @pages << Page.new(
           json['id'],
-          json.dig('properties', 'Name', 'title', 0, 'plain_text'),
+          json['properties'].values.detect{ |v| v['type'] == 'title'}.dig('title', 0, 'plain_text'),
           json['created_time'],
           json['last_edited_time'],
-          json.dig('properties', 'tag', 'multi_select').to_a.map{ |t| t['name'] }
+          json.dig('properties', 'Tags', 'multi_select').to_a.map{ |t| t['name'] }
         )
       end
     end
